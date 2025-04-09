@@ -41,6 +41,27 @@ If the simulator doesn't start automatically:
 - Press `r` to reload the app
 - Press `m` to open the developer menu
 
+## ✅ Testing
+
+This project uses **Jest** for testing.
+
+### 🧪 Run Tests
+
+```bash
+# Run all tests
+npm test
+
+# Run tests in watch mode
+npm test -- --watch
+
+# Run tests with coverage report
+npm test -- --coverage
+```
+
+### 🗂 Test Structure
+
+All test files are located in the `__tests__` directory.
+
 ### ⚠️ Notes
 
 - Both backend and frontend must be running for the app to work properly.
