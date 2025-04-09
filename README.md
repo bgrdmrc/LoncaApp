@@ -62,6 +62,26 @@ npm test -- --coverage
 
 All test files are located in the `__tests__` directory.
 
+## Environment Configuration
+
+The project uses environment variables for configuration. Here's how to set it up:
+
+1. Create a .env file in the root directory with the following content:
+env
+API_URL=http://localhost:3000
+
+
+2. Create a .env file in the backend directory with:
+env
+PORT=3000
+
+
+3. The .env files are already in .gitignore, so they won't be committed to version control.
+
+4. For other developers, we provide a .env.example file as a template:
+env
+API_URL=http://localhost:3000
+
 ### ⚠️ Notes
 
 - Both backend and frontend must be running for the app to work properly.
