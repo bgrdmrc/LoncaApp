@@ -13,13 +13,13 @@ npm install
 Start the Node.js server:
 
 ```bash
-cd backend && node server.js
+cd backend && npm install && node server.js
 ```
 
 The backend will run on:
 
 ```
-http://192.168.1.10:3000
+[http://192.168.1.10:3000]
 ```
 
 Make sure it's running for the app to fetch product data.
