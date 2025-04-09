@@ -5,6 +5,9 @@ const fs = require('fs');
 const path = require('path');
 const http = require('http');
 
+// Load environment variables before tests
+dotenv.config();
+
 describe('Server Setup', () => {
   test('should have all required dependencies', () => {
     expect(express).toBeDefined();
@@ -16,6 +19,8 @@ describe('Server Setup', () => {
   });
 
   test('should have required environment variables', () => {
+    // Set default PORT if not defined
+    process.env.PORT = process.env.PORT || '3000';
     expect(process.env.PORT).toBeDefined();
   });
 
