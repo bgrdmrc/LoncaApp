@@ -66,5 +66,5 @@ const server = http.createServer(app);
 
 // Listen on all network interfaces
 server.listen(port, '0.0.0.0', () => {
-  console.log(`Server is running on http://192.168.1.10:${port}`);
+  console.log(`Server is running on localhost:${port}`);
 }); 
